@@ -18,8 +18,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>商品一覧</h1>
           </div>
         </div>
       </div>
@@ -36,13 +35,8 @@
               <h2 class="post-title">
                 <?php the_title(); ?>
               </h2>
-              <h3 class="post-subtitle">
-                <?php the_excerpt(); ?>
-              </h3>
             </a>
-            <p class="post-meta">Posted by
-              <?php the_author(); ?>
-              on <?php the_time("y/m/d"); ?></p>
+            <p>価格: <?php echo number_format(get_field('価格')); ?>円</p>
           </div>
           <hr>
         <?php endwhile; ?>
@@ -56,6 +50,7 @@
 
   <hr>
 
+  <!-- Footer -->
   <?php get_template_part('includes/footer'); ?>
 
   <?php get_footer(); ?>

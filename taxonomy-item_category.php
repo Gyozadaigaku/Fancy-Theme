@@ -18,8 +18,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>カテゴリー別商品一覧</h1>
           </div>
         </div>
       </div>
@@ -40,9 +39,6 @@
                 <?php the_excerpt(); ?>
               </h3>
             </a>
-            <p class="post-meta">Posted by
-              <?php the_author(); ?>
-              on <?php the_time("y/m/d"); ?></p>
           </div>
           <hr>
         <?php endwhile; ?>

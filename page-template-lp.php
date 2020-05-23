@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: LP用レイアウト 
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -12,7 +17,7 @@
   <?php get_template_part('includes/nav'); ?>
 
   <!-- Page Header -->
-  <?php while (have_posts()) : the_post(); ?>
+  <!-- <?php while (have_posts()) : the_post(); ?>
     <header class="masthead" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/contact-bg.jpg')">
       <div class="overlay"></div>
       <div class="container">
@@ -24,23 +29,23 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <?php the_content(); ?>
-        </div>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <?php the_content(); ?>
       </div>
     </div>
+  </div>
 
-    <hr>
-  <?php endwhile ?>
+  <hr>
+<?php endwhile ?>
 
-  <?php get_template_part('includes/footer'); ?>
+<?php get_template_part('includes/footer'); ?>
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
 
 </body>
 
